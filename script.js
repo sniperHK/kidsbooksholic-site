@@ -124,23 +124,30 @@ const createMobileMenu = () => {
     }
 
     // Only create menu toggle for mobile
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 900) {
         menuToggleButton = document.createElement('button');
         menuToggleButton.innerHTML = '<i class="fas fa-bars"></i>';
         menuToggleButton.className = 'mobile-menu-toggle';
-        menuToggleButton.style.cssText = `
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--text-dark);
-            cursor: pointer;
-        `;
+        menuToggleButton.setAttribute('aria-label', '切換選單');
+        menuToggleButton.setAttribute('aria-expanded', 'false');
 
         menuToggleButton.addEventListener('click', () => {
             navMenu.classList.toggle('active');
+            const isOpen = navMenu.classList.contains('active');
+            menuToggleButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
 
         navbarContainer.appendChild(menuToggleButton);
+
+        if (!navMenu.dataset.mobileHooked) {
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    menuToggleButton?.setAttribute('aria-expanded', 'false');
+                });
+            });
+            navMenu.dataset.mobileHooked = 'true';
+        }
     } else {
         // Ensure menu is visible on desktop
         navMenu.classList.remove('active');
@@ -317,6 +324,10 @@ if (searchInput) {
 // Initialize episodes display
 window.addEventListener('load', () => {
     if (document.getElementById('episodesGrid')) {
+        const episodeCountLabel = document.getElementById('episodeCount');
+        if (episodeCountLabel) {
+            episodeCountLabel.textContent = `共 ${episodesData.length} 集`;
+        }
         renderEpisodes();
     }
 });

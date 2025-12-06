@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&family=Mochiy+Pop+One&family=ZCOOL+KuaiLe&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;500;600&family=Mochiy+Pop+One&family=ZCOOL+KuaiLe&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome for Icons -->
@@ -46,13 +46,19 @@
                 <i class="fas fa-book-heart"></i>
                 <span>Kidsbooksholic</span>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home">首頁</a></li>
-                <li><a href="#about">關於</a></li>
-                <li><a href="#podcast">Podcast</a></li>
-                <li><a href="#social">社群</a></li>
-                <li><a href="#contact">聯絡</a></li>
-            </ul>
+            <div class="nav-actions">
+                <ul class="nav-menu">
+                    <li><a href="#home">首頁</a></li>
+                    <li><a href="#about">關於</a></li>
+                    <li><a href="#podcast">Podcast</a></li>
+                    <li><a href="#social">社群</a></li>
+                    <li><a href="#contact">聯絡</a></li>
+                </ul>
+                <a class="nav-cta" href="#podcast">
+                    <i class="fas fa-headphones"></i>
+                    立即收聽
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -61,6 +67,7 @@
         <div class="hero-background"></div>
         <div class="container hero-content">
             <div class="hero-text">
+                <div class="hero-badge">親子英文繪本 Podcast</div>
                 <h1 class="hero-title">
                     <span class="title-main">閱讀馨聲</span>
                     <span class="title-sub">Kidsbooksholic</span>
@@ -70,6 +77,11 @@
                     透過繪本共讀，創造美好的親子時光<br>
                     減少 3C，增加陪伴，建立閱讀習慣
                 </p>
+                <div class="hero-highlights">
+                    <span class="highlight-pill"><i class="fas fa-moon-stars"></i>60+ 集睡前故事陪伴</span>
+                    <span class="highlight-pill"><i class="fas fa-star"></i>Apple Podcasts 4.5★</span>
+                    <span class="highlight-pill"><i class="fas fa-globe-americas"></i>雙語共讀 + 旅行靈感</span>
+                </div>
                 <div class="hero-buttons">
                     <a href="#podcast" class="btn btn-primary">
                         <i class="fas fa-podcast"></i> 收聽 Podcast
@@ -78,10 +90,29 @@
                         <i class="fas fa-circle-info"></i> 認識馨聲媽咪
                     </a>
                 </div>
+                <p class="hero-note">每一集都附上生活化的共讀技巧，陪孩子一起探索故事、減少 3C 依賴。</p>
             </div>
             <div class="hero-image">
                 <div class="floating-card">
-                    <i class="fas fa-book-open"></i>
+                    <div class="floating-header">
+                        <span class="pill">Kidsbooksholic</span>
+                        <div class="floating-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="floating-body">
+                        <p class="floating-eyebrow">親子故事電台</p>
+                        <h4>溫暖的聲音，
+                            <br>陪伴孩子長大</h4>
+                        <div class="floating-stats">
+                            <span><i class="fas fa-podcast"></i>Podcast</span>
+                            <span><i class="fas fa-book"></i>Story Time</span>
+                        </div>
+                        <div class="floating-footer">
+                            <i class="fas fa-heart"></i>
+                            <span>Less Screen, More Story</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,7 +124,11 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">關於馨聲媽咪 Peggy</h2>
+            <div class="section-header">
+                <p class="section-kicker">陪伴每晚的故事聲</p>
+                <h2 class="section-title">關於馨聲媽咪 Peggy</h2>
+                <p class="section-subtitle">Podcast 的每一集，都來自 Peggy 與孩子們真實的共讀日常，輕鬆陪伴爸媽建立讀書儀式。</p>
+            </div>
             <div class="about-content">
                 <div class="about-card">
                     <div class="about-icon">
@@ -123,7 +158,11 @@
     <!-- Podcast Section -->
     <section id="podcast" class="podcast">
         <div class="container">
-            <h2 class="section-title">Podcast 節目</h2>
+            <div class="section-header">
+                <p class="section-kicker">熱門單元</p>
+                <h2 class="section-title">Podcast 節目</h2>
+                <p class="section-subtitle">全英文故事、雙語導聽、旅行視野、家長提問信箱 —— 一次收錄，隨時陪伴。</p>
+            </div>
             <div class="podcast-intro">
                 <div class="podcast-cover">
                     <i class="fas fa-microphone-lines"></i>
@@ -155,6 +194,29 @@
                             <span>馨聲信箱互動</span>
                         </div>
                     </div>
+                    <div class="podcast-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p>短篇隨開即聽</p>
+                                <small>睡前、通勤都能立即播放</small>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-child"></i>
+                            <div>
+                                <p>孩子與爸媽共讀</p>
+                                <small>示範提問、引導、故事延伸</small>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-map-location-dot"></i>
+                            <div>
+                                <p>旅行靈感</p>
+                                <small>把繪本帶上路，開啟全新話題</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -176,16 +238,20 @@
                         <i class="fab fa-youtube"></i>
                         <span>YouTube</span>
                     </a>
-                    <a href="#" class="platform-card" target="_blank">
+                    <a href="https://sniperhk.github.io/kidsbooksholic-site/feed.xml" class="platform-card" target="_blank" rel="noopener">
                         <i class="fas fa-rss"></i>
-                        <span>Podcast Republic</span>
+                        <span>Podcast Republic / RSS</span>
                     </a>
                 </div>
             </div>
 
             <!-- Episodes List -->
             <div class="episodes-section">
-                <h4>Podcast 集數</h4>
+                <div class="section-header">
+                    <p class="section-kicker">往期與系列</p>
+                    <h4>Podcast 集數</h4>
+                    <p class="section-subtitle episodes-subtitle">搜尋集數、書名或主題，即可快速找到想聽的故事。</p>
+                </div>
                 <div class="episodes-controls">
                     <input type="text" id="episodeSearch" class="episode-search" placeholder="🔍 搜尋集數...">
                     <div class="episode-stats">
@@ -205,8 +271,11 @@
     <!-- Social Media Section -->
     <section id="social" class="social">
         <div class="container">
-            <h2 class="section-title">追蹤我們</h2>
-            <p class="section-subtitle">加入馨聲媽咪的社群，一起分享繪本共讀的美好時光</p>
+            <div class="section-header">
+                <p class="section-kicker">延伸閱讀、生活日常</p>
+                <h2 class="section-title">追蹤我們</h2>
+                <p class="section-subtitle">加入社群，和更多爸媽交流共讀筆記、旅行體驗、孩子的成長點滴。</p>
+            </div>
             <div class="social-grid">
                 <a href="https://www.facebook.com/kidsbooksholic" class="social-card facebook" target="_blank">
                     <div class="social-icon">
@@ -250,7 +319,11 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">聯絡我們</h2>
+            <div class="section-header">
+                <p class="section-kicker">想一起合作或詢問課程？</p>
+                <h2 class="section-title">聯絡我們</h2>
+                <p class="section-subtitle">歡迎合作邀約、課程諮詢或分享你的親子共讀故事，讓我們用聲音陪伴更多家庭。</p>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-card">
