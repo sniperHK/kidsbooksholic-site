@@ -153,6 +153,7 @@ window.addEventListener('resize', createMobileMenu);
 
 // ===== Episodes Display =====
 const episodesData = [
+    { number: "S2E11", title: "英文繪本共讀｜感恩湯料理＿Soup Day＿ ft. Isabelle 7Y1M、 Ethan 4Y1M", description: "感恩節特輯！", link: "https://player.soundon.fm/p/ca75157b-90d1-48de-877b-72520bd27f8d/episodes/6f5b9d3e-8b1e-4c0a-9e1d-3b5f0b5c0d1e" },
     { number: "S2E10", title: "英文繪本共讀 ＆跟著馨聲去旅行 4#｜巧克力女孩之巧克力共和國大揭秘 Chocolatina & Let's go to the chocolate museum !  ft. Isabelle (7Y1M) & Ethan (4Y1M)", description: "｜本集由uMeal優善糧贊助播出｜", link: "https://player.soundon.fm/p/ca75157b-90d1-48de-877b-72520bd27f8d/episodes/165b6da9-de3c-4fec-8d88-ac19feb94cb0" },
     { number: "S2E9", title: "跟著馨聲去旅行｜3# 一起去計程車博物館吧！ Let's go to the Taxi Museum ft. Isabelle (7Y1M) & Ethan (4Y1M)", description: "＝本集由宜蘭恆寓包棟民宿贊助播出＝（後面有彩蛋要聽到最後喔）", link: "https://player.soundon.fm/p/ca75157b-90d1-48de-877b-72520bd27f8d/episodes/d4bc3154-60fb-4536-b0bb-865e8ab9d5cb" },
     { number: "S2E8", title: "英文繪本共讀｜爆米花萬聖節_ Popcorn_ft. Isabelle (7Y)& Ethan (4Y)", description: "敦煌年度鉅獻：全英文兒童劇-海盜傳奇，閱讀馨聲IG粉專正在快閃抽獎 ，抽出一名幸運的聽眾擁有2張入場券！趕快點我參加！！ [抽獎已結束]", link: "https://player.soundon.fm/p/ca75157b-90d1-48de-877b-72520bd27f8d/episodes/c30bde37-6876-4072-ac3d-8924094e8fd7" },

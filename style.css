@@ -7,22 +7,28 @@
 
 :root {
     /* Colors */
-    --primary-gradient: linear-gradient(135deg, #FF6B9D 0%, #C44569 50%, #9B59B6 100%);
-    --secondary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --accent-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    --warm-gradient: linear-gradient(135deg, #FFD89B 0%, #19547B 100%);
+    /* Colors - Festive Red & Green Theme */
+    --primary-gradient: linear-gradient(135deg, #FFD700 0%, #D32F2F 50%, #C62828 100%);
+    --secondary-gradient: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);
+    --accent-gradient: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
+    --warm-gradient: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
 
-    --primary-color: #FF6B9D;
-    --secondary-color: #9B59B6;
-    --accent-color: #667eea;
-    --text-dark: #2c3e50;
-    --text-light: #6c757d;
-    --bg-light: #f8f9fa;
+    --primary-color: #D32F2F;
+    /* Festive Red */
+    --secondary-color: #2E7D32;
+    /* Forest Green */
+    --accent-color: #FFD700;
+    /* Gold */
+    --text-dark: #37474F;
+    --text-light: #546E7A;
+    --bg-light: #FFF8E1;
+    /* Cream/Warm White */
     --white: #ffffff;
 
     /* Typography */
     --font-primary: 'Noto Sans TC', sans-serif;
-    --font-display: 'Inter', 'Noto Sans TC', sans-serif;
+    --font-display: 'Mochiy Pop One', 'ZCOOL KuaiLe', sans-serif;
+    /* Playful font for headings */
 
     /* Spacing */
     --section-padding: 80px 0;
@@ -140,9 +146,11 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background: linear-gradient(135deg, #D32F2F 0%, #C62828 50%, #B71C1C 100%);
     opacity: 0.1;
+    /* Keep it subtle */
     z-index: -1;
+    /* Add pattern overlay if possible, or just keep gradient for now */
 }
 
 .hero-content {
